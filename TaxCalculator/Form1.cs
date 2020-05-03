@@ -55,5 +55,9 @@ namespace TaxCalculator
 
         }
 
+        private void txtIncome_TextChanged(object sender, EventArgs e)
+        {
+            txtTax.Text = "";
+        }
     }
 }

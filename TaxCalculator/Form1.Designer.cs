@@ -49,10 +49,11 @@
             // txtIncome
             // 
             this.txtIncome.Location = new System.Drawing.Point(151, 28);
-            this.txtIncome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIncome.Margin = new System.Windows.Forms.Padding(4);
             this.txtIncome.Name = "txtIncome";
             this.txtIncome.Size = new System.Drawing.Size(132, 22);
             this.txtIncome.TabIndex = 1;
+            this.txtIncome.TextChanged += new System.EventHandler(this.txtIncome_TextChanged);
             // 
             // label2
             // 
@@ -67,7 +68,7 @@
             // txtTax
             // 
             this.txtTax.Location = new System.Drawing.Point(151, 60);
-            this.txtTax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTax.Margin = new System.Windows.Forms.Padding(4);
             this.txtTax.Name = "txtTax";
             this.txtTax.ReadOnly = true;
             this.txtTax.Size = new System.Drawing.Size(132, 22);
@@ -77,7 +78,7 @@
             // btnCalculate
             // 
             this.btnCalculate.Location = new System.Drawing.Point(59, 107);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(100, 28);
             this.btnCalculate.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(184, 107);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 28);
             this.btnExit.TabIndex = 5;
@@ -110,7 +111,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtIncome);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Income Tax Calculator";
